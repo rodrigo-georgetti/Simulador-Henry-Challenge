@@ -10,7 +10,13 @@ function soloNumeros(array) {
   // Ej: 
   // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
-  // Tu código aca:
+  var arrayNumeros = [];
+  array.forEach(elemento => {
+    if (typeof elemento === 'number'){
+      arrayNumeros.push(elemento);
+    }
+  });
+  return arrayNumeros;
 
 }
 
